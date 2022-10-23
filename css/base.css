@@ -21,10 +21,13 @@ nav {
     border-radius: 10px;
 }
 body{
-    background-image: url(../img/fondo.png);
-   /* background-repeat: no-repeat;*/
+   
+    font-family: 'Roboto', 'Sans serif';
+   /*  background-image: url(../img/fondo.png);
+   background-repeat: no-repeat;
 
-    background-size: 100%;
+    background-size: 100%;*/
+    background-color: bisque;
 
 }
 
