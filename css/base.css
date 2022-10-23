@@ -5,7 +5,7 @@
 
 a{
     text-decoration: none;/* quitamos el subrayado*/
-    color:rgb(27%,38%,69%)
+    color:rgb(26, 26, 26)
 }
 
 .menu{
@@ -33,11 +33,11 @@ img{
     max-height: 200px;
 }
 p{
-    color:rgb(71,98,176)
+    color:rgb(26, 26, 26)
 }
 
 h2{
-    color:rgb(27%,38%,69%)
+    color:rgb(26, 26, 26)
 }
 h1{
     text-align: center;
