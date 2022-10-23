@@ -60,10 +60,14 @@ body{
     font-weight: 800;
     margin-bottom: 20px;
 }
-#correo{
-    width: 600%;
-  height: 50px;
-}
+input.text {
+    background: silver;
+    border: 1px solid #393939;
+    border-radius: 5px 5px 5px 5px;
+    color: #393939;
+    font-size: 45px;
+    padding: 5px;
+ }
 .banner_title .llamanos{
     color: #fff;
     font-size: 20px;
