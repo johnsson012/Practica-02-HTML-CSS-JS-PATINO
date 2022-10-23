@@ -60,7 +60,10 @@ body{
     font-weight: 800;
     margin-bottom: 20px;
 }
-
+#correo{
+    width: 600%;
+  height: 50px;
+}
 .banner_title .llamanos{
     color: #fff;
     font-size: 20px;
@@ -77,6 +80,10 @@ body{
 .banner_img img{
     width: 600px;
     display: block;
+}
+
+.{
+
 }
 
 /* burbujas */
