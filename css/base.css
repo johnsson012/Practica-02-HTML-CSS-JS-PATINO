@@ -1,9 +1,5 @@
-
 *{
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
-   
     font-family: 'Fira Sans', sans-serif;
 }
 
@@ -25,13 +21,10 @@ nav {
     border-radius: 10px;
 }
 body{
-   
-    font-family: 'Roboto', 'Sans serif';
-   /*  background-image: url(../img/fondo.png);
-   background-repeat: no-repeat;
+    background-image: url(../img/fondo.png);
+   /* background-repeat: no-repeat;*/
 
-    background-size: 100%;*/
-    background-color: bisque;
+    background-size: 100%;
 
 }
 
