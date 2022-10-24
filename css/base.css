@@ -12,13 +12,14 @@ a{
     color:rgb(26, 26, 26)
 }
 
-.menu{
-    list-style: none; /*quitamos el circulo de la lista*/
+/*.menu{
+    list-style: none; /*quitamos el circulo de la lista
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px 10px 10px 20px;
 }
+*/
 
 nav {
     background: #FFEA54;
