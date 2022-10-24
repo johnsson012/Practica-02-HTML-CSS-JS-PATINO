@@ -22,7 +22,9 @@ p{
 }
 
 .explicacion{
-    background: #FFEA54;
+    background: linear-gradient(to right, #005C98, #505BDA);
+    position: relative;
+    overflow: hidden;
     border-radius: 10px;
     width: 60%;
     margin-left: 2%;
