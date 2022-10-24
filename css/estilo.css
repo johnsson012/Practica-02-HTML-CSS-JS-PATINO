@@ -116,6 +116,7 @@ menu,
 nav,
 section {
   display: block;
+  
 }
 
 body {
@@ -236,10 +237,13 @@ p {
   margin: 0 auto;
 }
 
+.texto{
+  text-align: justify;
+}
 .services {
   background: #3498db;
   color: #fff;
-  text-align: justify
+  
 }
 
 .tarifas {
