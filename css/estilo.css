@@ -239,13 +239,14 @@ p {
 .services {
   background: #3498db;
   color: #fff;
+  text-align: justify
 }
 
 .tarifas {
  /* background: url(../images/dummy-tarifas.jpg) no-repeat center top;*/
   /*background-size: cover;*/
   background: #3498db;
-  color: rgba(255, 255, 255, 0.505);
+  color: rgba(37, 35, 35, 0.505);
 }
 
 .contain {
@@ -254,7 +255,7 @@ p {
 }
 
 .tarifas p {
-  max-width: 450px;
+  text-align: justify;
 }
 
 .localization {
