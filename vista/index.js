@@ -1,0 +1,119 @@
+function guardar(){
+    
+    const cedula=document.getElementById("cedula");
+    const nombre=document.getElementById("nombre");
+    const apellido=document.getElementById("apellido");
+    const edad=document.getElementById("edad");
+    const telefono=document.getElementById("telefono");
+    const email=document.getElementById("email");
+    const password=document.getElementById("password");
+    
+    
+    validar();
+    cedula.value="";
+    nombre.value="";
+    apellido.value="";
+    edad.value="";
+    telefono.value="";
+    email.value="";
+    password.value="";
+};
+ 
+
+/**
+ * Funcion para añadir datos en la tabla
+ */
+function agregarFila(cedula,nombre,apellido,edad,telefono,email,password) {
+    // añadimos una persona a la tabla crando el tr, td's 
+    const tr=document.createElement("tr");
+ 
+
+    const tdCedula=document.createElement("td");
+    let txt=document.createTextNode(cedula);
+    tdCedula.appendChild(txt);
+   
+
+    const tdNombre=document.createElement("td");
+    txt=document.createTextNode(nombre);
+    tdNombre.appendChild(txt);
+    
+
+    const tdApellido=document.createElement("td");
+    txt=document.createTextNode(apellido);
+    tdApellido.appendChild(txt);
+    
+ 
+    const tdEdad=document.createElement("td");
+    txt=document.createTextNode(edad);
+    tdEdad.appendChild(txt);
+    
+
+    const tdTelefono=document.createElement("td");
+    txt=document.createTextNode(telefono);
+    tdTelefono.appendChild(txt);
+    
+
+    const tdEmail=document.createElement("td");
+    txt=document.createTextNode(email);
+    tdEmail.appendChild(txt);
+    
+
+    const tdPassword=document.createElement("td");
+    txt=document.createTextNode(password);
+    
+    tdPassword.appendChild(txt);
+    
+
+    tr.appendChild(tdCedula);
+    tr.appendChild(tdNombre);
+    tr.appendChild(tdApellido);
+    tr.appendChild(tdEdad);
+    tr.appendChild(tdTelefono);
+    tr.appendChild(tdEmail);
+    //tr.appendChild(tdPassword);
+   
+ 
+    const tbody=document.getElementById("listado").querySelector("tbody").appendChild(tr);
+ 
+    
+}
+
+
+
+function validar() {
+    var cad = document.getElementById("cedula").value.trim();
+    var total = 0;
+    var longitud = cad.length;
+    var longcheck = longitud - 1;
+
+    if (cad !== "" && longitud === 10){
+      for(i = 0; i < longcheck; i++){
+        if (i%2 === 0) {
+          var aux = cad.charAt(i) * 2;
+          if (aux > 9) aux -= 9;
+          total += aux;
+        } else {
+          total += parseInt(cad.charAt(i)); // parseInt o concatenará en lugar de sumar
+        }
+      }
+
+      total = total % 10 ? 10 - total % 10 : 0;
+
+      if (cad.charAt(longitud-1) == total) {
+        agregarFila(cedula.value,nombre.value,apellido.value, edad.value,telefono.value,email.value,password.value);
+        console.log("Cedula Valida");
+
+      }else{
+        //document.getElementById("salida").innerHTML = ("Cedula Inválida");
+        window.alert('Cedula Inválida');
+       /*window.addEventListener("load",function(){ 
+            document.getElementById("viewAlert").addEventListener("click",function(){
+                alert("Como vas");
+            })
+        })*/
+      }
+    }
+  }
+ 
+
+
