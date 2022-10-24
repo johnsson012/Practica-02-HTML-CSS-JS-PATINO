@@ -168,7 +168,7 @@ body {
   text-align: left;
 }
 
-.list-services {
+/*.list-services {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -185,7 +185,7 @@ body {
 
 .header {
   height: 450px;
-  background: url(../images/dummy-header.jpg) no-repeat center top;
+ /* background: url(../images/dummy-header.jpg) no-repeat center top;*/
   background-size: cover;
 }
 
@@ -227,7 +227,7 @@ p {
 }
 
 .who {
-  background: #034b93;
+  background: #3498db;
   color: #fff;
 }
 
@@ -237,14 +237,15 @@ p {
 }
 
 .services {
-  background: #1e3349;
+  background: #3498db;
   color: #fff;
 }
 
 .tarifas {
  /* background: url(../images/dummy-tarifas.jpg) no-repeat center top;*/
-  background-size: cover;
-  color: rgba(255, 255, 255, 0.275);
+  /*background-size: cover;*/
+  background: #3498db;
+  color: rgba(255, 255, 255, 0.505);
 }
 
 .contain {
@@ -257,7 +258,7 @@ p {
 }
 
 .localization {
-  color: #034b93;
+  color: #3498db;
   padding-bottom: 0;
 }
 
@@ -440,15 +441,14 @@ p {
   }
 }
 
-ul li {
-  margin: 0;
-  padding: 0;
+.listOne {
+ 
   display: block;
-  list-style-type: disc;
-  margin-block-start: 1em;
+  list-style-type: circle;
+ /* margin-block-start: 1em;
   margin-block-end: 1em;
   margin-inline-start: 0px;
   margin-inline-end: 0px;
-  padding-inline-start: 40px;
+  padding-inline-start: 40px;*/
   color: rgb(255, 255, 255);
 }
