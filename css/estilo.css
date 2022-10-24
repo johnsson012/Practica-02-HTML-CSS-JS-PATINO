@@ -21,6 +21,7 @@
    License: none (public domain)
 */
 
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -89,15 +90,15 @@ table {
 /* 3 PARTS OF WEB */
   .content { padding: 80px 0;}
 
-    .who {background: #2c3e50; color: #fff;}
+    .who {background: #034b93; color: #fff;}
       .who p { max-width: 1055px; margin: 0 auto;}
-    .services {background: #34495e;color: #fff;}
+    .services {background: #1e3349;color: #fff;}
 
     .tarifas {background: url(../images/dummy-tarifas.jpg) no-repeat center top; background-size: cover; color: #fff;}
       .contain {max-width: 1055px; margin: 0 auto;}
       .tarifas p {max-width: 450px;}
 
-    .localization {color: #34495e; padding-bottom: 0;}
+    .localization {color: #034b93; padding-bottom: 0;}
       .localization .map img {max-width: 100%; width: 100%;}
 
 /* 3 LIST  */
@@ -122,7 +123,7 @@ table {
   border-radius: 50%;
   background: #fff;
   opacity: .3;
-  position: ;
+  position: relative;
   position: absolute;
   /*bottom: -150;*/
   animation: burbujas 3s linear infinite ;
