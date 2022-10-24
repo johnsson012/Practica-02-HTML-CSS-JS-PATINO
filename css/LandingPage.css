@@ -2,11 +2,12 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    display: wrap;
+  
 }
 
 body{
     font-family: 'Roboto', 'Sans serif';
+    display: wrap;
 }
 
 .contenedor{
