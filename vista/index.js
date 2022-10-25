@@ -18,6 +18,7 @@ function guardar(){
     telefono.value="";
     email.value="";
     password.value="";
+    window.alert('Usuario Agregado');
 };
  
 
@@ -75,7 +76,7 @@ function agregarFila(cedula,nombre,apellido,edad,telefono,email,password) {
    
  
     const tbody=document.getElementById("listado").querySelector("tbody").appendChild(tr);
- 
+    
     
 }
 function init() {
@@ -128,8 +129,10 @@ function validar() {
       total = total % 10 ? 10 - total % 10 : 0;
 
       if (cad.charAt(longitud-1) == total) {
+        window.alert('usuario AGRGADO');
         agregarFila(cedula.value,nombre.value,apellido.value, edad.value,telefono.value,email.value,password.value);
         console.log("Cedula Valida");
+       
 
       }else{
         //document.getElementById("salida").innerHTML = ("Cedula Inválida");
