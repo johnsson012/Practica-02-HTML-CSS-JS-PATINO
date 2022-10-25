@@ -242,7 +242,7 @@ p {
   text-align: justify;
 }
 .services {
-  background: #273a47;
+  background: #2b3135;
   color: #fff;
   
 }
@@ -251,7 +251,7 @@ p {
  /* background: url(../images/dummy-tarifas.jpg) no-repeat center top;*/
   /*background-size: cover;*/
   background: #3498db;
-  color: rgba(37, 35, 35, 0.505);
+  color: rgba(4, 4, 4, 0.505);
 }
 
 .contain {

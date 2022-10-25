@@ -8,9 +8,6 @@ function guardar(){
     const email=document.getElementById("email");
     const password=document.getElementById("password");
     
-    
-    
-    validar();
     cedula.value="";
     nombre.value="";
     apellido.value="";
@@ -18,6 +15,9 @@ function guardar(){
     telefono.value="";
     email.value="";
     password.value="";
+    
+    validar();
+   
     window.alert('Usuario Agregado');
 };
  
