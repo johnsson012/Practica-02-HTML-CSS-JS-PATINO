@@ -4,7 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="index.js"></script>
+   
     <title>Fondo animado</title>
+   
+
     <link rel="stylesheet" href="../css/LandingPage.css">
 </head>
 
@@ -22,15 +26,18 @@
         </div>
 
         <section class="banner contenedor">
-            <secrion class="banner_title">
+            <section class="banner_title">
                 <h2>Deseas mas Informacion sobre Las Mestrias en Software?<br> Registrate para mas informacion</h2></br>
                 <div class="correo">
-                    <input type="text" class="text" placeholder="name@example.com">
+                    <input type="email" class="text" placeholder="name@example.com" id="mail"/>
                     </br></br>
                 </div>
-
-                <a href="PaginaSecundaria.html" class="llamanos">Registrate!</a>
-            </secrion>
+            
+                    <input type="submit"   class="llamanos" value="Validate" onclick="return validateEmail()" href="PaginaSecundaria.html"/>
+                    
+                <a href="PaginaSecundaria.html" class="llamanos" >Continuar</a>
+           
+            </section>
             <div class="banner_img">
                 <img src="../img/fondo.png" alt="">
             </div>

@@ -9,6 +9,7 @@ function guardar(){
     const password=document.getElementById("password");
     
     
+    
     validar();
     cedula.value="";
     nombre.value="";
@@ -77,8 +78,36 @@ function agregarFila(cedula,nombre,apellido,edad,telefono,email,password) {
  
     
 }
+function init() {
+ 
+  let a = document.getElementById("a");
+  a.setAttribute("href", "PaginaSecundaria.html");
+  let aTexto = document.createTextNode("Pagina Secundaria");
+  a.appendChild(aTexto);
+   
+  document.body.appendChild(a);
 
+}
+function validateEmail(){
+                
+	// Get our input reference.
+	var emailField = document.getElementById('mail');
+	
+	// Define our regular expression.
+	var validEmail =  /^\w+([.-_+]?\w+)*@\w+([.-]?\w+)*(\.\w{2,10})+$/;
 
+	// Using test we can check if the text match the pattern
+	if( validEmail.test(emailField.value) ){
+
+		alert('Email is valid, continue with form submission');
+    
+		return true;
+	}else{
+    
+		alert('Email is invalid, skip form submission');
+		return false;
+	}
+} 
 
 function validar() {
     var cad = document.getElementById("cedula").value.trim();
@@ -96,7 +125,6 @@ function validar() {
           total += parseInt(cad.charAt(i)); // parseInt o concatenará en lugar de sumar
         }
       }
-
       total = total % 10 ? 10 - total % 10 : 0;
 
       if (cad.charAt(longitud-1) == total) {
@@ -113,7 +141,5 @@ function validar() {
         })*/
       }
     }
-  }
- 
-
+   }
 
